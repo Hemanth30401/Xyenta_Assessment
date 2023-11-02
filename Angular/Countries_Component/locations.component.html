@@ -11,7 +11,7 @@
 <tr *ngFor="let res of locations">
     <td>{{res.name.common}}&nbsp;&nbsp;<img src="{{res?.flags.png}}" style="width:30px;"></td>
     <td>{{res.capital}}</td>
-    <td><button><a href="{{res?.maps.googleMaps}}">Google Maps</a></button></td>
+    <td><button><a href="{{res?.maps.googleMaps}}"  target='_blank'>Google Maps</a></button></td>
 </tr>
 </div>
 </table>
