@@ -1,0 +1,6 @@
+
+Select concat('Name, '(', Substring(Occupation,1,1), ')',) as People from xyenta4thquestion 
+Union 
+Select concat("There are a total of , count(Occupation), lower(Occupation), "s.") from xyenta4thquestion 
+Group By Occupation 
+Order By People;

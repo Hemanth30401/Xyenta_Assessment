@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#1e90ff;
+    text-decoration: underline;
+}
+a:link{
+    color:#1e90ff;
+}
+a:visited{
+    color:darkgreen;
+    text-decoration: underline;
+}
+
+table {
+    margin: auto;
+    width: 50% !important; 
+ }

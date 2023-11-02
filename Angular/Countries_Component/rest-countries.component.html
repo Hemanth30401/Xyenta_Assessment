@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Countries Data</title>
+        <style>
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color:#1e90ff;
+                text-decoration: underline;
+            }
+            a:link
+            {
+                color:#1e90ff;
+            }
+            a:visited{
+                color:darkgreen;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+<app-all-links></app-all-links>
+<div class="container" style="margin-top:10px">
+<table style="table-layout: fixed" class="table table-dark table-striped">
+     
+<div *ngIf="country.length>0">
+<tr>
+    <th>Country Name</th>
+    <th>Capital</th>
+    <th>Location</th>
+    <th>Population</th>
+    <th>Continent</th>
+    <th>Time Zones</th>
+</tr>
+<tr *ngFor="let res of country">
+    <td>{{res.name.common}}&nbsp;&nbsp;<img src="{{res.flags.png}}" style="width:30px;"></td>
+    <td>{{res.capital}}</td>
+    <td><button><a href="{{res.maps.googleMaps}}">Google Maps</a></button></td>
+    <td>{{res.population}}</td>
+    <td>{{res.continents}}</td>
+    <td>{{res.timezones}}</td>
+</tr>
+</div>
+</table>
+</div>
+</body>
+</html>

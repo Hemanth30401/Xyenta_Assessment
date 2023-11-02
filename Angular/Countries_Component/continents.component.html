@@ -1,0 +1,19 @@
+<app-all-links></app-all-links>
+<div class="container" style="margin-top:30px;">
+<table style="text-align: center;" class="table table-dark table-striped">
+     
+<div *ngIf="continents.length>0">
+<tr>
+    <th>Country Name</th>
+    <th>Capital</th>
+    <th>Continent</th>
+</tr>
+<tr *ngFor="let res of continents">
+    <td>{{res.name.common}}&nbsp;&nbsp;<img src="{{res.flags.png}}" style="width:30px;"></td>
+    <td>{{res.capital}}</td>
+    <td>{{res.continents}}</td>
+</tr>
+</div>
+</table>
+</div>
+

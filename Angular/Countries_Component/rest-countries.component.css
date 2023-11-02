@@ -1,0 +1,9 @@
+table {
+    margin: auto;
+    width: 70% !important; 
+ }
+
+ table td{
+    word-break: break-all;
+    word-wrap: break-word;
+ }
